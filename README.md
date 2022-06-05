@@ -1,8 +1,14 @@
  # Streamlit Beginner Template Tour 🎈
- In this tour, you will learn about Streamlit basics & its awesome elements! 
+ 
+ [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/shruagarwal/streamlit_template/main)
+ 
+👆 In the above App tour, you will learn about Streamlit basics & its awesome elements! 
  
  ### How to use this Template 👇
- - You can run `streamlit_app.py` file which will take you to the Streamlit App & parallelly follow the code alongside for understanding the tour with much ease!
+ - You can fork the repl and try the *Shell commands below* --
+    - `$ pip install -r requirements.txt`
+    - `$ streamlit run streamlit_app.py` 
+    - After running the above commands, it will start the Streamlit App & you can parallelly follow the code alongside for understanding the tour with much ease!
  - The *#comments* in the code will help you navigate through it.
  - You can freely use this template to experiment with cool Streamlit elements!  
  - I have tried my best to make it look simple and easy to understand for everyone 🙂. I've learned so much while making this template, if you use it, please let me know!
