@@ -27,7 +27,7 @@ with st.expander("Follow these steps below 👇"):
 # Sidebar section ---
 with st.sidebar:
     st.header("Streamlit Elements Corner ✨")
-    select = st.selectbox("Explore any element 👀", ["", "Data and Chart displays","Text Elements", "Input data", "Media 📷"])
+    select = st.selectbox("Explore any element 👀", ["", "Data and Chart displays","Text Elements", "Input data", "Media 📷", "Layouts & Containers"])
     
     if st.button('Streamlit Challenge 🏁'):
         st.info('Check out 👉 [#30DaysofStreamlit](https://share.streamlit.io/streamlit/30days?challenge=Day+1)')
@@ -136,7 +136,7 @@ elif select == 'Input data':
     st.header('Lots of awesome widgets! 🤯')
 
     # Part of Streamlit's "Layouts and Containers" Section
-    col1, col2, col3 = st.columns([5, 5, 5]) 
+    col1, col2, col3 = st.columns([5, 5, 5], gap="small") 
     with col1:
         st.write('📌This section covers **button** & **radio buttons** widgets')
         st.subheader('st.button')
@@ -221,6 +221,34 @@ elif select == 'Media 📷':
              \n- *Mood* -- Relaxed, Patient, Respectful, Subdued.
              \n- *Instruments* -- Acoustic Guitar, Flute
              \n- *Downloaded from* -- https://www.videvo.net/royalty-free-music/sort/popular/instrument/flute/""")
+
+
+################################################################################################
+# Layouts & Containers section --->
+elif select == 'Layouts & Containers' : 
+    st.header('Take control of elements to be laid out on the screen!')
+
+    st.write('👈 **Sidebar is already present in the left side coded using -- `st.sidebar`**')
+    st.write('**Columns have been used in Input Data section of the template, coded with -- `st.columns`**')
+
+    st.subheader('st.tabs')
+    st.write('*One of the newly launched cool feature for inserting multiple elements into containers as TABS!*')
+
+    tab1, tab2 = st.tabs(["Voila!", "Funny"])
+    
+    with tab1:
+        st.header("WOW!!")
+        st.image("https://i.gifer.com/DJR3.gif", width=400)
+
+    with tab2:
+        st.header("Funny! 😆")
+        st.image("https://res.cloudinary.com/dougsillars/image/upload/v1546606222/shaq_mtl6do.gif", width=200)
+
+    st.write('You are free to add as many tabs you wish!')
+
+    st.subheader('st.expander')
+    with st.expander("CLICK ME to expand!"):
+     st.write('This is an example of **Expander, that you can use to hold multiple elements for expanding it or to collapse it!**')
 
     st.subheader('And that\'s a wrap!🎉 Hope you learnt a lot from this tour and had fun as well! 😊')
 else:
