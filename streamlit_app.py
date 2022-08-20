@@ -136,7 +136,7 @@ elif select == 'Input data':
     st.header('Lots of awesome widgets! 🤯')
 
     # Part of Streamlit's "Layouts and Containers" Section
-    col1, col2, col3 = st.columns([5, 5, 5], gap="small") 
+    col1, col2, col3 = st.columns([5, 5, 5], gap="medium") 
     with col1:
         st.write('📌This section covers **button** & **radio buttons** widgets')
         st.subheader('st.button')
@@ -227,9 +227,12 @@ elif select == 'Media 📷':
 # Layouts & Containers section --->
 elif select == 'Layouts & Containers' : 
     st.header('Take control of elements to be laid out on the screen!')
-
-    st.write('👈 **Sidebar is already present in the left side coded using -- `st.sidebar`**')
-    st.write('**Columns have been used in Input Data section of the template, coded with -- `st.columns`**')
+    
+    st.subheader('st.sidebar')
+    st.write('👈 **Sidebar is already present in the left side of the app!**')
+     
+    st.subheader('st.columns')
+    st.write('**Input Data section is displayed using columns.**')
 
     st.subheader('st.tabs')
     st.write('*One of the newly launched cool feature for inserting multiple elements into containers as TABS!*')
@@ -242,7 +245,7 @@ elif select == 'Layouts & Containers' :
 
     with tab2:
         st.header("Funny! 😆")
-        st.image("https://res.cloudinary.com/dougsillars/image/upload/v1546606222/shaq_mtl6do.gif", width=200)
+        st.image("https://res.cloudinary.com/dougsillars/image/upload/v1546606222/shaq_mtl6do.gif", width=400)
 
     st.write('You are free to add as many tabs you wish!')
 
