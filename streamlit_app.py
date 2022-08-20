@@ -229,10 +229,10 @@ elif select == 'Layouts & Containers' :
     st.header('Take control of elements to be laid out on the screen!')
     
     st.subheader('st.sidebar')
-    st.write('👈 **Sidebar is already present in the left side of the app!**')
+    st.write('👈 *Sidebar is already present in the left side of the app!*')
      
     st.subheader('st.columns')
-    st.write('**Input Data section is displayed using columns.**')
+    st.write('*Input Data section is displayed using columns.*')
 
     st.subheader('st.tabs')
     st.write('*One of the newly launched cool feature for inserting multiple elements into containers as TABS!*')
