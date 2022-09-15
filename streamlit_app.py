@@ -191,7 +191,15 @@ elif select == 'Input data':
         greet = st.text_input('Your name here')
         st.write('👋 Hey!', greet, 'Glad to see you here.')
         
-    
+     
+    st.subheader('st.file_uploader')
+    st.write('⬆️ Upload Anything like images, CSVs, videos, audio, et.')
+    uploaded = st.file_uploader("🖼️ Upload any Image")
+    if uploaded is not None:
+        display_image = Image.open(uploaded)
+        st.image(display_image)
+          
+          
     st.markdown('🌟 You can try out with more widgets [here](https://docs.streamlit.io/library/api-reference/widgets)')
 
 ################################################################################################
