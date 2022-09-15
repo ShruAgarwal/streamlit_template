@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import altair as alt
 from vega_datasets import data
+from PIL import Image
 
 st.title('Welcome to the Streamlit Tour! 🎈')
 with st.expander("About this App"):
@@ -191,6 +192,7 @@ elif select == 'Input data':
         greet = st.text_input('Your name here')
         st.write('👋 Hey!', greet, 'Glad to see you here.')
         
+     
      
     st.subheader('st.file_uploader')
     st.write('⬆️ Upload Anything like images, CSVs, videos, audio, et.')
