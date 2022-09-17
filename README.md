@@ -4,7 +4,13 @@
  
 👆 In the above App tour, you will learn about Streamlit basics & its awesome elements! 
  
+
  ### How to use this Template 👇
+ <a href="https://replit.com/@ShrutiAgarwal11/StreamlitTour">
+  <img src="https://img.shields.io/badge/Replit-667881.svg?style=for-the-badge&logo=Replit&logoColor=white" />
+  <!--<img src="https://img.shields.io/badge/Replit-000000?style=for-the-badge&logo=replit&logoColor=667881">-->
+</a>
+
  - You can fork the repl and try the *Shell commands below* --
     - `$ pip install -r requirements.txt`
     - `$ streamlit run streamlit_app.py` 
@@ -20,8 +26,9 @@
 3. `numpy` -- generating random numerical data
 4. `altair` -- visulalizing data from dataframes
 5. `vega-datasets` -- data used for generating map with `altair`!
+6. `PIL` -- to upload any type of image files
 
 Hope you have fun learning with Streamlit! 😉
 
 
-🌟 This repo is a part of **Replit's** [Template Jam 2022](https://blog.replit.com/template-jam)
+<!--🌟 This repo is a part of **Replit's** [Template Jam 2022](https://blog.replit.com/template-jam)-->
